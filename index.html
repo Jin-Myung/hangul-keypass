@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hangul Keypass</title>
+    <script src="wasm_exec.js"></script>
+</head>
+<body>
+<h1>기억하기 쉬운 암호 생성기</h1>
+
+<div>
+    <label><input type="checkbox" id="opt-num" checked> 숫자 포함</label>
+    <label><input type="checkbox" id="opt-symbol" checked> 특수문자 포함</label>
+    <button onclick="generate()">비밀번호 생성</button>
+</div>
+
+<div id="result" style="margin-top: 20px; font-size: 1.2em;"></div>
+<div id="origin-word" style="font-size: 0.9em; color: gray;"></div>
+
+<script src="main.js"></script>
+</body>
+</html>

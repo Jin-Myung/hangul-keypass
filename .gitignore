@@ -1,0 +1,9 @@
+# Go build artifacts
+main.wasm
+
+# macOS
+.DS_Store
+.idea/
+
+# Python cache
+__pycache__/
