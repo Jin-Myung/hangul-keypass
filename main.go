@@ -2,8 +2,19 @@
 package main
 
 import (
+	_ "embed"
+	"strings"
 	"syscall/js"
 )
+
+//go:embed internal/words.txt
+var wordText string
+
+var wordList []string
+
+func init() {
+	wordList = strings.Split(strings.TrimSpace(wordText), "\n")
+}
 
 func generate(this js.Value, args []js.Value) interface{} {
 	// TODO: 실제 생성 로직 대체 예정

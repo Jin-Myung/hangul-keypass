@@ -7,3 +7,9 @@ main.wasm
 
 # Python cache
 __pycache__/
+
+# Word list
+internal/words.txt
+
+# Firebase
+.firebase/

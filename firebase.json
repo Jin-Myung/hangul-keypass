@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/.*",
+      "**/node_modules/**",
+      "**/*.go",
+      "serve.go",
+      "README.md",
+      "Makefile",
+      "**/*.sh",
+      "**/__pycache__/**",
+      "**/*.test.*",
+      ".DS_Store",
+      "internal/words.txt",
+      "words.json"
+    ]
+  }
+}
