@@ -122,9 +122,11 @@ func generate(this js.Value, args []js.Value) interface{} {
 	useSym := args[1].Bool()
 
 	// 단어 구성: 강한 단어 + 일반 단어
-	parts := []string{
-		strongList[secureIndex(len(strongList))],
-		wordList[secureIndex(len(wordList))],
+	parts := []string{strongList[secureIndex(len(strongList))]}
+	if secureBool(0.1) {
+		parts = append(parts, strongList[secureIndex(len(strongList))])
+	} else {
+		parts = append(parts, wordList[secureIndex(len(wordList))])
 	}
 
 	if useNum {
