@@ -9,7 +9,7 @@ main.wasm
 __pycache__/
 
 # Word list
-internal/words.txt
+internal/
 
 # Firebase
 .firebase/
