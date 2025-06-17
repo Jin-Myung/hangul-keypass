@@ -7,8 +7,6 @@
 </head>
 <body>
 <h1>기억하기 쉬운 강력한 암호 생성기</h1>
-<p>Disclaimer: 표준 국어대사전 단어들을 조합하여 영어 대문자를 포함한 암호를 생성합니다.</p>
-<p>보안 강화를 위해 숫자와 기호를 혼합하여 사용하세요.</p>
 
 <div>
     <label><input type="checkbox" id="opt-num"> 숫자 포함</label>
@@ -19,6 +17,24 @@
 <div id="result" style="margin-top: 20px; font-size: 1.2em;"></div>
 <div id="origin-word" style="font-size: 0.9em; color: gray;"></div>
 
+<div id="disclaimer" style="font-size: 0.85em; color: #666; margin-top: 2em;">
+    <p>※ 항상 영어 대문자가 포함된 암호를 생성합니다.</p>
+    <p>※ 보안을 위해 <strong>숫자 및 특수문자 포함</strong>을 권장하며, 생성된 비밀번호의 사용에 대한 책임은 사용자에게 귀속됩니다.</p>
+    <p>※ 이 서비스는 표준 국어대사전을 기반으로 하며, 단어의 선정은 개발자의 의도와 무관합니다.</p>
+    <p>※ 단어를 임의로 조합하는 방식 때문에 문법에 어긋난 암호가 출력될 수 있으나, 오히려 이것이 암호 용도로는 적절할 수 있습니다.</p>
+    <p>※ 생성된 비밀번호는 클라이언트 브라우저에서만 처리되며 저장되지 않습니다.</p>
+</div>
+
 <script src="main.js"></script>
 </body>
+
+<footer style="margin-top: 2em; font-size: 0.85em; color: #666;">
+    <p>
+        © 2025 by J. Won |
+        <a href="https://github.com/Jin-Myung/hangul-keypass" target="_blank" style="text-decoration: none;">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 20px; vertical-align: middle;" />
+            GitHub에서 소스 보기
+        </a>
+    </p>
+</footer>
 </html>
